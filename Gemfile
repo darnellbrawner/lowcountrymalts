@@ -39,3 +39,4 @@ gem 'jbuilder', '~> 1.0.1'
 
   gem 'execjs'
   gem 'therubyracer'
+  gem 'devise', github: 'idl3/devise', branch: 'rails4'

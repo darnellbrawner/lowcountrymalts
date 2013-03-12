@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @club.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @club.description %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @club.area %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @club.state %>
+</p>
+
+<p>
+  <strong>Founded:</strong>
+  <%= @club.founded %>
+</p>
+
+<p>
+  <strong>Aha registered:</strong>
+  <%= @club.aha_registered %>
+</p>
+
+<p>
+  <strong>Meeting time:</strong>
+  <%= @club.meeting_time %>
+</p>
+
+<p>
+  <strong>Meeting dates:</strong>
+  <%= @club.meeting_dates %>
+</p>
+
+<p>
+  <strong>Meeting address:</strong>
+  <%= @club.meeting_address %>
+</p>
+
+<p>
+  <strong>Meeting zip:</strong>
+  <%= @club.meeting_zip %>
+</p>
+
+<p>
+  <strong>Meeting state:</strong>
+  <%= @club.meeting_state %>
+</p>
+
+<p>
+  <strong>Alternate meeting address:</strong>
+  <%= @club.alternate_meeting_address %>
+</p>
+
+<p>
+  <strong>Alternate meeting zip:</strong>
+  <%= @club.alternate_meeting_zip %>
+</p>
+
+<p>
+  <strong>Alternate meeting state:</strong>
+  <%= @club.alternate_meeting_state %>
+</p>
+
+<p>
+  <strong>Alternate meeting datetime:</strong>
+  <%= @club.alternate_meeting_datetime %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @club.active %>
+</p>
+
+<p>
+  <strong>Dues:</strong>
+  <%= @club.dues %>
+</p>
+
+
+<%= link_to 'Edit', edit_club_path(@club) %> |
+<%= link_to 'Back', clubs_path %>

@@ -1,0 +1,59 @@
+<h1>Listing clubs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Area</th>
+      <th>State</th>
+      <th>Founded</th>
+      <th>Aha registered</th>
+      <th>Meeting time</th>
+      <th>Meeting dates</th>
+      <th>Meeting address</th>
+      <th>Meeting zip</th>
+      <th>Meeting state</th>
+      <th>Alternate meeting address</th>
+      <th>Alternate meeting zip</th>
+      <th>Alternate meeting state</th>
+      <th>Alternate meeting datetime</th>
+      <th>Active</th>
+      <th>Dues</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clubs.each do |club| %>
+    <tr>
+      <td><%= club.name %></td>
+      <td><%= club.description %></td>
+      <td><%= club.area %></td>
+      <td><%= club.state %></td>
+      <td><%= club.founded %></td>
+      <td><%= club.aha_registered %></td>
+      <td><%= club.meeting_time %></td>
+      <td><%= club.meeting_dates %></td>
+      <td><%= club.meeting_address %></td>
+      <td><%= club.meeting_zip %></td>
+      <td><%= club.meeting_state %></td>
+      <td><%= club.alternate_meeting_address %></td>
+      <td><%= club.alternate_meeting_zip %></td>
+      <td><%= club.alternate_meeting_state %></td>
+      <td><%= club.alternate_meeting_datetime %></td>
+      <td><%= club.active %></td>
+      <td><%= club.dues %></td>
+      <td><%= link_to 'Show', club %></td>
+      <td><%= link_to 'Edit', edit_club_path(club) %></td>
+      <td><%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Club', new_club_path %>
