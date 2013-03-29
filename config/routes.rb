@@ -1,9 +1,17 @@
 Lowcountrymalts::Application.routes.draw do
+  resources :clubs_members
+
+  resources :attachments
+
+  resources :members
+
+  resources :locations
+
   resources :clubs
 
   devise_for :users
   
-  #root :to => "home#index"
+  root :to => "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

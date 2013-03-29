@@ -1,0 +1,29 @@
+<h1>Listing clubs_members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Club</th>
+      <th>Member</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clubs_members.each do |clubs_member| %>
+    <tr>
+      <td><%= clubs_member.club_id %></td>
+      <td><%= clubs_member.member_id %></td>
+      <td><%= link_to 'Show', clubs_member %></td>
+      <td><%= link_to 'Edit', edit_clubs_member_path(clubs_member) %></td>
+      <td><%= link_to 'Destroy', clubs_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Clubs member', new_clubs_member_path %>

@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130312190303) do
+ActiveRecord::Schema.define(version: 20130329035509) do
+
+  create_table "attachments", force: true do |t|
+    t.string   "description"
+    t.string   "filename"
+    t.integer  "size"
+    t.string   "content_type"
+    t.boolean  "active"
+    t.string   "resource_type"
+    t.integer  "resource_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "clubs", force: true do |t|
     t.string   "name"
@@ -33,6 +45,59 @@ ActiveRecord::Schema.define(version: 20130312190303) do
     t.datetime "alternate_meeting_datetime"
     t.boolean  "active"
     t.string   "dues"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "clubs_members", force: true do |t|
+    t.integer  "club_id"
+    t.integer  "member_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "locations", force: true do |t|
+    t.integer  "club_id"
+    t.string   "name"
+    t.text     "description"
+    t.string   "address_line1"
+    t.string   "address_line2"
+    t.string   "city"
+    t.string   "state_province"
+    t.string   "postal_code"
+    t.integer  "country_id"
+    t.string   "latitude"
+    t.string   "longitude"
+    t.string   "atn1"
+    t.string   "atv1"
+    t.string   "atn2"
+    t.string   "atv2"
+    t.string   "resource_type"
+    t.integer  "resource_id"
+    t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "members", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "middle_name"
+    t.text     "bio"
+    t.string   "email"
+    t.string   "cell_number"
+    t.string   "home_number"
+    t.date     "birthday"
+    t.string   "occupation"
+    t.string   "gender"
+    t.string   "hobbies"
+    t.integer  "contact_id"
+    t.integer  "location_id"
+    t.date     "started_brewing"
+    t.string   "favorite_styles"
+    t.string   "on_tap"
+    t.string   "primary"
+    t.string   "future_brews"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,63 @@
+<h1>Listing members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Middle name</th>
+      <th>Bio</th>
+      <th>Email</th>
+      <th>Cell number</th>
+      <th>Home number</th>
+      <th>Birthday</th>
+      <th>Occupation</th>
+      <th>Gender</th>
+      <th>Hobbies</th>
+      <th>Contact</th>
+      <th>Email</th>
+      <th>Location</th>
+      <th>Started brewing</th>
+      <th>Favorite styles</th>
+      <th>On tap</th>
+      <th>Primary</th>
+      <th>Future brews</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @members.each do |member| %>
+    <tr>
+      <td><%= member.first_name %></td>
+      <td><%= member.last_name %></td>
+      <td><%= member.middle_name %></td>
+      <td><%= member.bio %></td>
+      <td><%= member.email %></td>
+      <td><%= member.cell_number %></td>
+      <td><%= member.home_number %></td>
+      <td><%= member.birthday %></td>
+      <td><%= member.occupation %></td>
+      <td><%= member.gender %></td>
+      <td><%= member.hobbies %></td>
+      <td><%= member.contact_id %></td>
+      <td><%= member.email %></td>
+      <td><%= member.location_id %></td>
+      <td><%= member.started_brewing %></td>
+      <td><%= member.favorite_styles %></td>
+      <td><%= member.on_tap %></td>
+      <td><%= member.primary %></td>
+      <td><%= member.future_brews %></td>
+      <td><%= link_to 'Show', member %></td>
+      <td><%= link_to 'Edit', edit_member_path(member) %></td>
+      <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Member', new_member_path %>

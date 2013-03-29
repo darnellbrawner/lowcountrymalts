@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @attachment.description %>
+</p>
+
+<p>
+  <strong>File name:</strong>
+  <%= @attachment.file_name %>
+</p>
+
+<p>
+  <strong>File size:</strong>
+  <%= @attachment.file_size %>
+</p>
+
+<p>
+  <strong>Content type:</strong>
+  <%= @attachment.content_type %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @attachment.active %>
+</p>
+
+<p>
+  <strong>Resource type:</strong>
+  <%= @attachment.resource_type %>
+</p>
+
+<p>
+  <strong>Resource:</strong>
+  <%= @attachment.resource_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_attachment_path(@attachment) %> |
+<%= link_to 'Back', attachments_path %>

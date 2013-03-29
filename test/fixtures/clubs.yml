@@ -8,30 +8,13 @@ one:
   founded: 2013-03-11
   aha_registered: false
   meeting_time: 2013-03-11 22:54:57
-  meeting_dates: MyString
+  meeting_date: MyString
+  meeting_city: Bluffton
   meeting_address: MyString
   meeting_zip: MyString
   meeting_state: MyString
   alternate_meeting_address: MyString
-  alternate_meeting_zip: MyString
-  alternate_meeting_state: MyString
-  alternate_meeting_datetime: 2013-03-11 22:54:57
-  active: false
-  dues: MyString
-
-two:
-  name: MyString
-  description: MyString
-  area: MyString
-  state: MyString
-  founded: 2013-03-11
-  aha_registered: false
-  meeting_time: 2013-03-11 22:54:57
-  meeting_dates: MyString
-  meeting_address: MyString
-  meeting_zip: MyString
-  meeting_state: MyString
-  alternate_meeting_address: MyString
+  alternate_meeting_city: MyString
   alternate_meeting_zip: MyString
   alternate_meeting_state: MyString
   alternate_meeting_datetime: 2013-03-11 22:54:57

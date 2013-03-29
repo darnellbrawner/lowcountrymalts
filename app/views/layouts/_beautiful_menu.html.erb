@@ -1,0 +1,4 @@
+<!-- Beautiful Scaffold Menu Do Not Touch This -->
+      <li class="<%= "active" if params[:controller] == "admin/locations" %>">
+        <%= link_to t(:locations, :default => "locations").capitalize, admin_locations_path %>
+      </li>

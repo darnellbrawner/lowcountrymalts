@@ -10,15 +10,18 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 4.0.0.beta1'
   gem 'coffee-rails', '~> 4.0.0.beta1'
-
+  gem 'bootstrap-sass-rails', :git => 'git://github.com/yabawock/bootstrap-sass-rails.git'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', platforms: :ruby
-
+  gem 'therubyracer', platforms: :ruby
+  gem 'execjs'
   gem 'uglifier', '>= 1.0.3'
+  gem "font-awesome-rails", :git => 'git://github.com/bokmann/font-awesome-rails.git'
+  gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :git => 'git://github.com/anjlab/bootstrap-rails.git'
+  gem 'jquery-ui-rails'
+  gem 'jquery-timepicker-rails'
 end
 
 gem 'jquery-rails'
-
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -37,6 +40,10 @@ gem 'jbuilder', '~> 1.0.1'
 # To use debugger
 # gem 'debugger'
 
-  gem 'execjs'
-  gem 'therubyracer'
+  
+  #gem 'therubyracer'
   gem 'devise', github: 'idl3/devise', branch: 'rails4'
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+  #gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+  gem "pothoven-attachment_fu", :git => "git://github.com/pothoven/attachment_fu.git"

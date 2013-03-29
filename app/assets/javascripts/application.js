@@ -12,5 +12,17 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
+//= require jquery.timepicker.js
+//= require jquery-ui-timepicker-addon.js
 //= require turbolinks
+//= require twitter/bootstrap
 //= require_tree .
+//= require_self
+
+$(function() {
+  $('.datepicker').datepicker();
+  $('.timepicker').timepicker();
+  $('.datetimepicker').datetimepicker();
+});
+
